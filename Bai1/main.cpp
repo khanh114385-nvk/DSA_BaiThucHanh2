@@ -1,21 +1,21 @@
 #include <iostream>
 using namespace std;
-void Nhap(float* a, int n) {
+void nhap(float *a, int n) {
   for (int i = 0; i < n; i++) {
     cin >> *(a + i);
   }
 }
-void In(const float* a, int n) {
+void in(const float *a, int n) {
   for (int i = 0; i < n; i++) {
-    count << *(a + i) << "\t";
+    cout << *(a + i) << "\t";
   }
-  count << endl;
+  cout << endl;
 }
 int main() {
   int n;
   cin >> n;
   float* a = new float[n];
-  Nhap(a, n);
-  In(a, n);
+  nhap(a, n);
+  in(a, n);
   return 0;
 }
